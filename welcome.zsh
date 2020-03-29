@@ -54,3 +54,22 @@ cd $HOME/Project/maven-setup
 
 echo "Bootstrapping local environment..."
 ansible-playbook playbooks/bootstrap.yml
+
+echo
+echo
+echo "================================================================================"
+echo "           _____  _____  _   _  _____ ______   ___   _____  _____  _            "
+echo "          /  __ \|  _  || \ | ||  __ \| ___ \ / _ \ |_   _|/  ___|| |           "
+echo "          | /  \/| | | ||  \| || |  \/| |_/ // /_\ \  | |  \ \`--. | |          "
+echo "          | |    | | | || . \` || | __ |    / |  _  |  | |   \`--. \| |         "
+echo "          | \__/\\ \_/ /| |\  || |_\ \| |\ \ | | | |  | |  /\__/ /|_|           "
+echo "           \____/ \___/ \_| \_/ \____/\_| \_|\_| |_/  \_/  \____/ (_)           "
+echo
+echo "================================================================================"
+echo
+echo "You machine is all set with the common tools used across our teams. Depending on"
+echo "what projects you will be working on you may want to run one of the following"
+echo "team-specific setup scripts:"
+echo
+echo "  * Mavenlink Core Product:  ./setup bigmaven"
+echo
