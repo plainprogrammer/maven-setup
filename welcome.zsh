@@ -74,3 +74,11 @@ echo "team-specific setup scripts:"
 echo
 echo "  * Mavenlink Core Product:  ./setup bigmaven"
 echo
+echo "If you ever want to rerun the main bootstrap process again, you can follow these"
+echo "steps:"
+echo
+echo "  1. cd \$HOME/Projects/maven-setup"
+echo "  2. ./setup bootstrap"
+echo
+echo "Welcome to Mavenlink!"
+echo

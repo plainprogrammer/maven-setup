@@ -1,0 +1,7 @@
+#!/bin/zsh
+
+for setupRequested in $@; do
+  if [[ $setupRequested == "bootstrap" ]]; then
+    ansible-playbook ./playbooks/bootstrap.yml
+  fi
+done
