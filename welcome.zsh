@@ -46,3 +46,11 @@ echo | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/ins
 
 echo "Installing Ansible..."
 /usr/local/bin/brew install ansible > /dev/null
+
+echo "Cloning maven-setup locally..."
+mkdir -p $HOME/Projects
+git clone https://github.com/plainprogrammer/maven-setup.git $HOME/Projects/maven-setup
+cd $HOME/Project/maven-setup
+
+echo "Bootstrapping local environment..."
+ansible-playbook playbooks/bootstrap.yml

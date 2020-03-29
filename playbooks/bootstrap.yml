@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Add git-duet tap for Homebrew
+      homebrew_tap:
+        name: git-duet/tap
+        state: present
+    - name: Install common packages
+      homebrew:
+        name:
+          - asdf
+          - git
+          - git-duet
+          - gnupg
+          - pinentry-mac
+          - wget
+          - zsh-git-prompt
+        state: present
