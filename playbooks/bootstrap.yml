@@ -15,4 +15,4 @@
           - pinentry-mac
           - wget
           - zsh-git-prompt
-        state: present
+        state: latest
