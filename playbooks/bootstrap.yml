@@ -16,3 +16,10 @@
           - wget
           - zsh-git-prompt
         state: latest
+    - name: Check status of full-disk encryption
+      command: fdesetup status | grep "FileVault is On."
+      register: diskEncryptionEnabled
+    - name: Enable full-disk encryption
+      command: fdesetup enable
+      when: diskEncryptionEnabled is false
+      become: true
