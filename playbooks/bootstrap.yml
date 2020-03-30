@@ -15,7 +15,7 @@
           - pinentry-mac
           - wget
           - zsh-git-prompt
-        state: latest
+        state: present
     - name: Check status of full-disk encryption
       command: fdesetup status
       register: filevault_status
