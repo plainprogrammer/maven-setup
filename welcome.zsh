@@ -51,7 +51,7 @@ echo "Installing Ansible..."
 echo "Cloning maven-setup locally..."
 mkdir -p $HOME/Projects
 git clone https://github.com/plainprogrammer/maven-setup.git $HOME/Projects/maven-setup
-cd $HOME/Project/maven-setup
+cd $HOME/Projects/maven-setup
 
 echo "Bootstrapping local environment..."
 ansible-playbook playbooks/bootstrap.yml
