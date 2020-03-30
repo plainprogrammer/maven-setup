@@ -4,4 +4,8 @@ for setupRequested in $@; do
   if [[ $setupRequested == "bootstrap" ]]; then
     ansible-playbook ./playbooks/bootstrap.yml
   fi
+
+  if [[ $setupRequested == "bigmaven" ]]; then
+    ansible-playbook ./playbooks/bigmaven.yml
+  fi
 done
