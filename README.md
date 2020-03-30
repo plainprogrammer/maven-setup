@@ -21,8 +21,8 @@ that setup's playbook. You can even provide multiple setups at once to smooth
 the process out even more.
 
 ```
-$ setup bootstrap           # Update with the basic bootstrap playbook
-$ setup bigmaven            # Update with the playbook for working on BigMaven
+$ ./setup bootstrap           # Update with the basic bootstrap playbook
+$ ./setup bigmaven            # Update with the playbook for working on BigMaven
 
-$ setup bootstrap bigmaven  # Update with both bootstrap and BigMaven playbooks.
+$ ./setup bootstrap bigmaven  # Update with both bootstrap and BigMaven playbooks.
 ```
