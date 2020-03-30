@@ -1,6 +1,10 @@
 ---
 - hosts: localhost
   tasks:
+    - name: Install OpenJDK (used by elasticsearch)
+      homebrew_cask:
+        name: adoptopenjdk8
+        state: latest
     - name: Install system services
       homebrew:
         name:
