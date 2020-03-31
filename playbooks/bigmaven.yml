@@ -3,8 +3,8 @@
   tasks:
     - name: Install OpenJDK (used by elasticsearch)
       homebrew_cask:
-        name: adoptopenjdk8
-        state: latest
+        name: adoptopenjdk
+        state: present
     - name: Install system services
       homebrew:
         name:
@@ -12,12 +12,12 @@
           - memcached
           - mysql@5.7
           - redis@3.2
-        state: latest
+        state: present
     - name: Install runtime dependencies
       homebrew:
         name:
           - imagemagick@6
-        state: latest
+        state: present
     - name: Ensure memcached is running
       command: brew services restart memcached
     - name: Ensure MySQL is running
