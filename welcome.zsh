@@ -42,6 +42,11 @@ until git --version &> /dev/null; do
   sleep 5
 done
 
+echo "Enabling FileVault full-disk encryption..."
+if [[ $(fdesetup status) == "FileVault is Off." ]]; then
+    sudo fdesetup enable -norecoverykey -quiet -user $(whoami)
+fi
+
 echo "Installing Homebrew..."
 echo | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" > /dev/null
 
